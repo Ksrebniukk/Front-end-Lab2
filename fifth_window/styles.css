@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #FFEBEE;
+  color: #333;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  background-color: #FF4081;
+  padding: 10px;
+  border-bottom: 2px solid #D81B60;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+.content {
+  flex: 1;
+  padding-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section {
+  text-align: center;
+  margin: 20px;
+}
+.hero-section .hero-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+.services-section {
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto;
+}
+.services-section table {
+  margin: 0 auto;
+}
+.services-section .service-box {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #FF80AB;
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.services-section .service-box .service-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+.subscribe-section {
+  text-align: center;
+  margin: 30px 0;
+}
+.subscribe-section input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #FF80AB;
+  margin-right: 10px;
+}
+.subscribe-section button {
+  padding: 10px 20px;
+  background-color: #FF80AB;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+.footer table {
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+}
+.footer table td {
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .service-box {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: none;
+  }
+  .subscribe-section input[type="email"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+  }
+  .subscribe-section button {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .service-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .header {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  .hero-section h2 {
+    font-size: 1.5em;
+  }
+  .hero-section p {
+    font-size: 0.9em;
+  }
+  .subscribe-section input[type="email"] {
+    width: calc(100% - 20px);
+  }
+  .subscribe-section button {
+    width: 100%;
+  }
+  .footer td {
+    font-size: 0.8em;
+  }
+}
